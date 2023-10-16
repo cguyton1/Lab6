@@ -1,1 +1,37 @@
-
+ td, th{
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #3498db; /* Blue color for the heading */
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #3498db; /* Blue border for cells */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db; /* Blue background for table headers */
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray for even rows */
+        }
+        tr:hover {
+            background-color: #e0e0e0; /* Slightly darker gray on hover */
+        }
+        .planet-name {
+            font-weight: bold;
+            color: #e74c3c; /* Red color for planet names */
+        }
+        .planet-image {
+            max-width: 100px;
+        }
