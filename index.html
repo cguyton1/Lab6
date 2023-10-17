@@ -1,68 +1,120 @@
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Planetary Fact Sheet</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        text-align: center;
+    }
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px auto;
+    }
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #333;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    tr:hover {
+        background-color: #ddd;
+    }
+    .planet-name {
+        font-weight: bold;
+    }
+    .planet-image {
+        max-width: 100px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Planet Facts</h1>
-    <table>
-        <tr>
-            <th>Planet</th>
-            <th>Image</th>
-            <th>Mass (kg)</th>
-            <th>Diameter (km)</th>
-            <th>Distance from Sun (million km)</th>
-            <th>Length of Day (hours)</th>
-            <th>Orbital Period (days)</th>
-            <th>Orbital Velocity (km/s)</th>
-            <th>Gravity (m/s²)</th>
-            <th>Density (g/cm³)</th>
-        </tr>
-        <tr>
-            <td class="planet-name">Mercury</td>
-            <td><img class="planet-image" src="mercury.jpg" alt="Mercury"></td>
-            <td>3.3011 × 10^23</td>
-            <td>4,880</td>
-            <td>57.9</td>
-            <td>4222.6</td>
-            <td>88</td>
-            <td>47.87</td>
-            <td>3.7</td>
-            <td>5.427
-        </tr>
-        <tr>
-            <td class="planet-name">Venus</td>
-            <td><img class="planet-image" src="venus.jpg" alt="Venus"></td>
-            <td>4.8675 × 10^24</td>
-            <td>12,104</td>
-            <td>108.2</td>
-            <td>2802</td>
-            <td>225</td>
-            <td>35.02</td>
-            <td>8.87</td>
-            <td>5.243
-        </tr>
-        <tr>
-            <td class="planet-name">Earth</td>
-            <td><img class="planet-image" src="earth.jpg" alt="Earth"></td>
-            <td>5.972 × 10^24</td>
-            <td>12,742</td>
-            <td>149.6</td>
-            <td>24</td>
-            <td>365.25</td>
-            <td>29.78</td>
-            <td>9.81</td>
-            <td>5.515
-        </tr>
-        <tr>
-            <td class="planet-name">Mars</td>
-            <td><img class="planet-image" src="mars.jpg" alt="Mars"></td>
-            <td>6.4171 × 10^23</td>
-            <td>6,779</td>
-            <td>227.9</td>
-            <td>24.6</td>
-            <td>687</td>
-            <td>24.077</td>
-            <td>3.721</td>
-            <td>3.933
-        </tr>
-    </table>
+  <h1>Planetary Fact Sheet</h1>
+  <table id="planets">
+    <tr>
+      <th></th>
+      <th>Mercury</th>
+      <th>Venus</th>
+      <th>Earth</th>
+      <th>Mars</th>
+    </tr>
+    <tr>
+      <td>Images</td>
+      <td><img class="planet-image" src="mercury.jpg" alt="Mercury"></td>
+      <td><img class="planet-image" src="venus.jpg" alt="Venus"></td>
+      <td><img class="planet-image" src="earth.jpg" alt="Earth"></td>
+      <td><img class="planet-image" src="mars.jpg" alt="Mars"></td>
+    </tr>
+    <tr>
+      <td>Mass (kg)</td>
+      <td>3.3011 × 10^23</td>
+      <td>4.8675 × 10^24</td>
+      <td>5.972 × 10^24</td>
+      <td>6.4171 × 10^23</td>
+    </tr>
+    <tr>
+      <td>Diameter (km)</td>
+      <td>4,880</td>
+      <td>12,104</td>
+      <td>12,742</td>
+      <td>6,779</td>
+    </tr>
+    <tr>
+      <td>Distance from Sun (million km)</td>
+      <td>57.9</td>
+      <td>108.2</td>
+      <td>149.6</td>
+      <td>227.9</td>
+    </tr>
+    <tr>
+      <td>Length of Day (hours)</td>
+      <td>4222.6</td>
+      <td>2802</td>
+      <td>24</td>
+      <td>24.6</td>
+    </tr>
+    <tr>
+      <td>Orbital Period (days)</td>
+      <td>88</td>
+      <td>225</td>
+      <td>365.25</td>
+      <td>687</td>
+    </tr>
+    <tr>
+      <td>Orbital Velocity (km/s)</td>
+      <td>47.87</td>
+      <td>35.02</td>
+      <td>29.78</td>
+      <td>24.077</td>
+    </tr>
+    <tr>
+      <td>Gravity (m/s²)</td>
+      <td>3.7</td>
+      <td>8.87</td>
+      <td>9.81</td>
+      <td>3.721</td>
+    </tr>
+    <tr>
+      <td>Density (g/cm³)</td>
+      <td>5.427</td>
+      <td>5.243</td>
+      <td>5.515</td>
+      <td>3.933</td>
+    </tr>
+  </table>
 </body>
 </html>
